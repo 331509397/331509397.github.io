@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Git配置SSH Key的时候提示密钥无效 | Devil的老巢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="错误提示：Key is invalid. You must supply a key in OpenSSH public key format谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥 操作步骤1.生成公钥1ssh-keygen -t rsa -C &quot;GitHub账号的注册邮箱&quot;  2.进入路径1vim ~/.ssh/id_rsa.pub  3.复制公钥到GitHub设置SSH an">
+  <meta name="description" content="错误提示：Key is invalid. You must supply a key in OpenSSH public key format谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥 操作步骤1.生成公钥1ssh-keygen -t rsa -C &quot;GitHub账号的注册邮箱&quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git配置SSH Key的时候提示密钥无效">
 <meta property="og:url" content="http://yoursite.com/2021/04/04/Git配置SSH-Key的时候提示密钥无效/index.html">
 <meta property="og:site_name" content="Devil的老巢">
-<meta property="og:description" content="错误提示：Key is invalid. You must supply a key in OpenSSH public key format谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥 操作步骤1.生成公钥1ssh-keygen -t rsa -C &quot;GitHub账号的注册邮箱&quot;  2.进入路径1vim ~/.ssh/id_rsa.pub  3.复制公钥到GitHub设置SSH an">
+<meta property="og:description" content="错误提示：Key is invalid. You must supply a key in OpenSSH public key format谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥 操作步骤1.生成公钥1ssh-keygen -t rsa -C &quot;GitHub账号的注册邮箱&quot;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2021-04-04T11:55:18.282Z">
+<meta property="og:updated_time" content="2021-04-04T11:56:08.544Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git配置SSH Key的时候提示密钥无效">
-<meta name="twitter:description" content="错误提示：Key is invalid. You must supply a key in OpenSSH public key format谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥 操作步骤1.生成公钥1ssh-keygen -t rsa -C &quot;GitHub账号的注册邮箱&quot;  2.进入路径1vim ~/.ssh/id_rsa.pub  3.复制公钥到GitHub设置SSH an">
+<meta name="twitter:description" content="错误提示：Key is invalid. You must supply a key in OpenSSH public key format谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥 操作步骤1.生成公钥1ssh-keygen -t rsa -C &quot;GitHub账号的注册邮箱&quot;">
   
     <link rel="alternative" href="/atom.xml" title="Devil的老巢" type="application/atom+xml">
   
@@ -178,6 +178,7 @@
         <p>错误提示：Key is invalid. You must supply a key in OpenSSH public key format<br>谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥</p>
 <h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><h3 id="1-生成公钥"><a href="#1-生成公钥" class="headerlink" title="1.生成公钥"></a>1.生成公钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"GitHub账号的注册邮箱"</span></span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
 <h3 id="2-进入路径"><a href="#2-进入路径" class="headerlink" title="2.进入路径"></a>2.进入路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 
 <h3 id="3-复制公钥到GitHub设置SSH-and-GPG-keys中的SSH-keys"><a href="#3-复制公钥到GitHub设置SSH-and-GPG-keys中的SSH-keys" class="headerlink" title="3.复制公钥到GitHub设置SSH and GPG keys中的SSH keys"></a>3.复制公钥到GitHub设置SSH and GPG keys中的SSH keys</h3><p>错误原因：格式不正确<br>解决方法：<br>第2步使用如下命令后复制</p>
