@@ -175,9 +175,13 @@
       
         <p>错误提示：Key is invalid. You must supply a key in OpenSSH public key format<br>谷歌翻译：密钥无效。必须提供OpenSSH公钥格式的密钥</p>
 <h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><h3 id="1-生成公钥"><a href="#1-生成公钥" class="headerlink" title="1.生成公钥"></a>1.生成公钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"GitHub账号的注册邮箱"</span></span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2021/04/04/Git配置SSH-Key的时候提示密钥无效/#more">more >></a>
-        
+
+<h3 id="2-进入路径"><a href="#2-进入路径" class="headerlink" title="2.进入路径"></a>2.进入路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-复制公钥到GitHub设置SSH-and-GPG-keys中的SSH-keys"><a href="#3-复制公钥到GitHub设置SSH-and-GPG-keys中的SSH-keys" class="headerlink" title="3.复制公钥到GitHub设置SSH and GPG keys中的SSH keys"></a>3.复制公钥到GitHub设置SSH and GPG keys中的SSH keys</h3><p>错误原因：格式不正确<br>解决方法：<br>第2步使用如下命令后复制</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<h2 id="以上"><a href="#以上" class="headerlink" title="以上"></a>以上</h2>
       
 
       
