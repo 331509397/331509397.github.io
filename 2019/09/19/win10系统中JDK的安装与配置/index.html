@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://yoursite.com/images/jdk%E5%AE%89%E8%A3%855.jpg">
 <meta property="og:image" content="http://yoursite.com/images/jdk%E5%AE%89%E8%A3%856.jpg">
 <meta property="og:image" content="http://yoursite.com/images/jdk%E5%AE%89%E8%A3%857.jpg">
-<meta property="og:updated_time" content="2019-09-19T08:06:28.829Z">
+<meta property="og:updated_time" content="2021-04-04T11:29:03.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="win10系统中JDK的安装与配置">
 <meta name="twitter:description" content="此步骤以jdk 13版本为例，望注意一、关于JDK的安装1、首先下载jdk网址：https://www.oracle.com/technetwork/java/javase/downloads/index.html找到适合自己所需的版本的点击下">
@@ -183,38 +183,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="此步骤以jdk-13版本为例，望注意"><a href="#此步骤以jdk-13版本为例，望注意" class="headerlink" title="此步骤以jdk 13版本为例，望注意"></a>此步骤以jdk 13版本为例，望注意</h2><h2 id="一、关于JDK的安装"><a href="#一、关于JDK的安装" class="headerlink" title="一、关于JDK的安装"></a>一、关于JDK的安装</h2><p>1、首先下载jdk<br>网址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br>找到适合自己所需的版本的点击下<a id="more"></a>载，我这里用的是Java SE 13<br><img src="/images/jdk%E5%AE%89%E8%A3%851.jpg" alt><br>点击第一个接受协议，然后选择适合自己系统的版本安装<br><img src="/images/jdk%E5%AE%89%E8%A3%852.jpg" alt><br>2、下载好安装包后直接启动安装包就好（可自行选择安装位置），13版的安装十分简单，一直下一步就好</p>
-<h2 id="二、关于JDK的环境配置"><a href="#二、关于JDK的环境配置" class="headerlink" title="二、关于JDK的环境配置"></a>二、关于JDK的环境配置</h2><p>1、进入之前jdk的安装目录查看是否有jre文件<br>jdk默认安装目录为：C:\Program Files\Java\jdk-13<br>11与12版本没有jre文件，需手动安装；如果是13版本则可以忽略，手动安装会报错，说明13不再需要手动安装jre文件。<br>2、【13版本可忽略这一步】<br>按win+r打开cmd命令窗口，使用cd命令进入jdk安装目录<br>cd命令：</p>
+        <h2 id="此步骤以jdk-13版本为例，望注意"><a href="#此步骤以jdk-13版本为例，望注意" class="headerlink" title="此步骤以jdk 13版本为例，望注意"></a>此步骤以jdk 13版本为例，望注意</h2><h2 id="一、关于JDK的安装"><a href="#一、关于JDK的安装" class="headerlink" title="一、关于JDK的安装"></a>一、关于JDK的安装</h2><h3 id="1、首先下载jdk"><a href="#1、首先下载jdk" class="headerlink" title="1、首先下载jdk"></a>1、首先下载jdk</h3><p>网址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br>找到适合自己所需的版本的点击下<a id="more"></a>载，我这里用的是Java SE 13<br><img src="/images/jdk%E5%AE%89%E8%A3%851.jpg" alt><br>点击第一个接受协议，然后选择适合自己系统的版本安装<br><img src="/images/jdk%E5%AE%89%E8%A3%852.jpg" alt></p>
+<h3 id="2、下载好安装包后直接启动安装包就好（可自行选择安装位置），13版的安装十分简单，一直下一步就好"><a href="#2、下载好安装包后直接启动安装包就好（可自行选择安装位置），13版的安装十分简单，一直下一步就好" class="headerlink" title="2、下载好安装包后直接启动安装包就好（可自行选择安装位置），13版的安装十分简单，一直下一步就好"></a>2、下载好安装包后直接启动安装包就好（可自行选择安装位置），13版的安装十分简单，一直下一步就好</h3><h2 id="二、关于JDK的环境配置"><a href="#二、关于JDK的环境配置" class="headerlink" title="二、关于JDK的环境配置"></a>二、关于JDK的环境配置</h2><h3 id="1、进入之前jdk的安装目录查看是否有jre文件"><a href="#1、进入之前jdk的安装目录查看是否有jre文件" class="headerlink" title="1、进入之前jdk的安装目录查看是否有jre文件"></a>1、进入之前jdk的安装目录查看是否有jre文件</h3><p>jdk默认安装目录为：C:\Program Files\Java\jdk-13<br>11与12版本没有jre文件，需手动安装；如果是13版本则可以忽略，手动安装会报错，说明13不再需要手动安装jre文件。</p>
+<h3 id="2、【13版本可忽略这一步】"><a href="#2、【13版本可忽略这一步】" class="headerlink" title="2、【13版本可忽略这一步】"></a>2、【13版本可忽略这一步】</h3><p>按win+r打开cmd命令窗口，使用cd命令进入jdk安装目录<br>cd命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Program Files\Java\jdk-13</span><br></pre></td></tr></table></figure>
 
 <p>后面是你自己的安装目录，此处以我的13为例</p>
 <p>然后执行安装命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre</span><br></pre></td></tr></table></figure>
 
-<p>3、鼠标右键我的电脑（此电脑/计算机），打开属性-高级系统设置-环境变量<br><img src="/images/jdk%E5%AE%89%E8%A3%853.jpg" alt><br>4、新建系统变量，<br>变量名：</p>
+<h3 id="3、鼠标右键我的电脑（此电脑-计算机），打开属性-高级系统设置-环境变量"><a href="#3、鼠标右键我的电脑（此电脑-计算机），打开属性-高级系统设置-环境变量" class="headerlink" title="3、鼠标右键我的电脑（此电脑/计算机），打开属性-高级系统设置-环境变量"></a>3、鼠标右键我的电脑（此电脑/计算机），打开属性-高级系统设置-环境变量</h3><p><img src="/images/jdk%E5%AE%89%E8%A3%853.jpg" alt></p>
+<h3 id="4、新建系统变量，"><a href="#4、新建系统变量，" class="headerlink" title="4、新建系统变量，"></a>4、新建系统变量，</h3><p>变量名：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME</span><br></pre></td></tr></table></figure>
 
 <p>变量值：你自己的jdk安装路径</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\Java\jdk-13</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/images/jdk%E5%AE%89%E8%A3%854.jpg" alt><br>5、新建系统变量，<br>变量名：</p>
+<p><img src="/images/jdk%E5%AE%89%E8%A3%854.jpg" alt></p>
+<h3 id="5、新建系统变量，"><a href="#5、新建系统变量，" class="headerlink" title="5、新建系统变量，"></a>5、新建系统变量，</h3><p>变量名：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CLASSPATH</span><br></pre></td></tr></table></figure>
 
 <p>变量值：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</span><br></pre></td></tr></table></figure>
 
-<p><img src="/images/jdk%E5%AE%89%E8%A3%855.jpg" alt><br>6、双击Path，点击新建，添加</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JAVA_HOME%\bin</span><br></pre></td></tr></table></figure>
+<p><img src="/images/jdk%E5%AE%89%E8%A3%855.jpg" alt></p>
+<h3 id="6、双击Path，点击新建，添加"><a href="#6、双击Path，点击新建，添加" class="headerlink" title="6、双击Path，点击新建，添加"></a>6、双击Path，点击新建，添加</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JAVA_HOME%\bin</span><br></pre></td></tr></table></figure>
 
 
 
 <p>再次点击新建，添加【若是13版本可不添加这一行】</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JAVA_HOME%\jre\bin</span><br></pre></td></tr></table></figure>
 
-<p>【注意】，win10环境变量值是一行一行的，上述需要新建两行，不能放在一行。<br><img src="/images/jdk%E5%AE%89%E8%A3%856.jpg" alt><br>7、cmd命令窗口输入 javac，java -version ，java均能正常显示，则配置成功。<br><img src="/images/jdk%E5%AE%89%E8%A3%857.jpg" alt></p>
-<p>以上</p>
-
+<p>【注意】，win10环境变量值是一行一行的，上述需要新建两行，不能放在一行。<br><img src="/images/jdk%E5%AE%89%E8%A3%856.jpg" alt></p>
+<h3 id="7、cmd命令窗口输入-javac，java-version-，java均能正常显示，则配置成功。"><a href="#7、cmd命令窗口输入-javac，java-version-，java均能正常显示，则配置成功。" class="headerlink" title="7、cmd命令窗口输入 javac，java -version ，java均能正常显示，则配置成功。"></a>7、cmd命令窗口输入 javac，java -version ，java均能正常显示，则配置成功。</h3><p><img src="/images/jdk%E5%AE%89%E8%A3%857.jpg" alt></p>
+<h2 id="以上"><a href="#以上" class="headerlink" title="以上"></a>以上</h2>
       
 
       
@@ -306,6 +309,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/04/04/Git配置SSH-Key的时候提示密钥无效/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Git配置SSH Key的时候提示密钥无效
+        
+      </div>
+    </a>
   
   
     <a href="/2019/09/13/关于网易云外链的生成/" id="article-nav-older" class="article-nav-link-wrap">
